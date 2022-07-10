@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph2"
+    app:startDestination="@id/menuPrincipalFragment">
+
+    <fragment
+        android:id="@+id/menuPrincipalFragment"
+        android:name="com.healthypocket.ui.MenuPrincipalFragment"
+        android:label="Menu Healthy Pocket"
+        tools:layout="@layout/fragment_menu_principal" >
+        <action
+            android:id="@+id/navigate_to_agregar_cita"
+            app:destination="@id/agregandoCitaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/perfilFragment"
+        android:name="com.healthypocket.ui.PerfilFragment"
+        android:label="Perfil"
+        tools:layout="@layout/fragment_perfil" />
+    <fragment
+        android:id="@+id/graficosFragment"
+        android:name="com.healthypocket.ui.GraficosFragment"
+        android:label="Graficos"
+        tools:layout="@layout/fragment_graficos" />
+    <fragment
+        android:id="@+id/agregandoCitaFragment"
+        android:name="com.healthypocket.ui.AgregandoCitaFragment"
+        android:label="fragment_agregando_cita"
+        tools:layout="@layout/fragment_agregando_cita" >
+        <action
+            android:id="@+id/navigate_to_menu"
+            app:destination="@id/menuPrincipalFragment" />
+        <action
+            android:id="@+id/action_refresh_self"
+            app:destination="@id/agregandoCitaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/citaFragment"
+        android:name="com.healthypocket.ui.CitaFragment"
+        android:label="fragment_cita"
+        tools:layout="@layout/fragment_cita" >
+        <action
+            android:id="@+id/action_citaFragment_refresh"
+            app:destination="@id/citaFragment" />
+    </fragment>
+</navigation>

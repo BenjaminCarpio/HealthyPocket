@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-5 offset-md-3">
+      <div class="card card-body bg-dark p-4 text-white rounded-0">
+        <h1>Actualizar datos</h1>
+        <form action="/edit/{{task._id}}" method="POST">
+
+          <div class="mb-3">
+            <label for="title">Editar usuario: </label>
+            <input
+              type="text"
+              name="username"
+              placeholder="Usuario"
+              value="{{task.username}}"
+              class="form-control rounded-0 bg-dark text-white"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="title">Editar nombre: </label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Nombre"
+              value="{{task.name}}"
+              class="form-control rounded-0 bg-dark text-white"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="title">Editar apellido: </label>
+            <input
+              type="text"
+              name="lastname"
+              placeholder="Apellido"
+              value="{{task.lastname}}"
+              class="form-control rounded-0 bg-dark text-white"
+            />
+          </div>
+
+          <button class="btn btn-primary btn-sm mt-2">Actualizar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

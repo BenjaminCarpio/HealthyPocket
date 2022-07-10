@@ -1,0 +1,33 @@
+{{#if tasks}}
+<table class="table table-bordered table-hover table-dark">
+    <thead>
+        <tr>
+            <th>N.</th>
+            <th>Usuario</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Operaciones</th>
+
+        </tr>
+    </thead>
+
+    <tbody>
+        {{#each tasks}}
+            <tr>
+                <td>{{@index}}</td>
+                <td>{{username}}</td>
+                <td>{{name}}</td>
+                <td>{{lastname}}</td>
+                <td>
+                     <a href="/delete/{{_id}}" class="btn btn-danger">Eliminar</a>
+                     <a href="/edit/{{_id}}" class="btn btn-info">Editar</a>
+                </td>
+            </tr> 
+        {{/each}}
+    </tbody>
+</table>
+{{else}}
+    <div class="text-center text-white">
+        <h1>No registros</h1>
+    </div>  
+{{/if}}

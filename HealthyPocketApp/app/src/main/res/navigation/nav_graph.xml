@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/iniciarSesionFragment">
+
+    <fragment
+        android:id="@+id/iniciarSesionFragment"
+        android:name="com.healthypocket.ui.IniciarSesionFragment"
+        android:label="Bienvenido a Healthy Pocket"
+        tools:layout="@layout/fragment_iniciar_sesion" >
+        <action
+            android:id="@+id/navigate_to_registrarse"
+            app:destination="@id/registrarseFragment" />
+        <action
+            android:id="@+id/navigate_to_recuperar"
+            app:destination="@id/recuperarContraFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrarseFragment"
+        android:name="com.healthypocket.ui.RegistrarseFragment"
+        android:label="Registrar"
+        tools:layout="@layout/fragment_registrarse" >
+        <action
+            android:id="@+id/navigate_to_iniciar"
+            app:destination="@id/iniciarSesionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/recuperarContraFragment"
+        android:name="com.healthypocket.ui.RecuperarContraFragment"
+        android:label="Recupera tu contraseña"
+        tools:layout="@layout/fragment_recuperar_contra" >
+        <action
+            android:id="@+id/navigate_to_inicio"
+            app:destination="@id/iniciarSesionFragment" />
+    </fragment>
+</navigation>
