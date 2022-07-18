@@ -53,3 +53,9 @@ Puedes Acceder a Nuestra Pagina Administrativa en el Siguiente Link:
 
 ![image](https://user-images.githubusercontent.com/54713857/178045897-aa75973b-7f98-40d9-a7c7-02a1696b92b1.png)
 
+Colaboradores: 
+- [Eduardo Dominguez](https://github.com/EduardoDominguez1)
+- [Carlos Vásquez ](https://github.com/vasquecar)
+- [William Pineda](https://github.com/wpineda21)
+
+
